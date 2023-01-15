@@ -70,7 +70,7 @@ We can import data into our Streamlit app using pandas `read_csv` then display t
 
 ''')
 
-data = pd.read_csv('SeattleHomePrices.csv')
+data = pd.read_csv('practice_files/SeattleHomePrices.csv')
 data = data.rename(columns={'LATITUDE': 'lat', 'LONGITUDE': 'lon'})
 st.dataframe(data)
 
