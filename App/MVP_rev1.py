@@ -4,8 +4,8 @@ import matplotlib as plt
 #import sklearn
 import streamlit as st
 from sqlalchemy import create_engine
-from sqlalchemy import inspect
 import sqlite3
+from sqlalchemy import inspect
 
 #import gcsfs
 #from google.oauth2 import service_account
@@ -41,7 +41,7 @@ st.write(
 #st.write('test')
 con = sqlite3.connect('mvp_recipe_reduced.db')
 cur = con.cursor()
-df = pd.read_sql_query("SELECT * FROM df_recipe_topic_labeled_mvp_reduced", con)
+df = pd.read_sql_query('SELECT * FROM df_recipe_topic_labeled_mvp_reduced', con)
 
 
 #insp = inspect(engine_recipes) 
