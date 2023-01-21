@@ -5,7 +5,7 @@ import matplotlib as plt
 import streamlit as st
 from sqlalchemy import create_engine
 from sqlalchemy import inspect
-import sqlite
+import sqlite3
 
 #import gcsfs
 #from google.oauth2 import service_account
