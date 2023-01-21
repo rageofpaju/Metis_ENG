@@ -35,8 +35,8 @@ st.write(
 #df = pd.read_csv('gs://bucket_lhs/eng_db/df_recipe_topic_labeled.csv')
 #data = data.rename(columns={'LATITUDE': 'lat', 'LONGITUDE': 'lon'})
 #df = pd.read_csv('C:/Git Storage/Engineering/df_recipe_topic_labeled_mvp.csv')
-engine_recipes = create_engine('sqlite:///c:/Git Storage/Engineering//mvp_recipe.db').connect()
-df = pd.read_sql_table('df_recipe_topic_labeled_mvp', engine_recipes)
+engine_recipes = create_engine('sqlite:///mvp_recipe_reduced.db').connect()
+df = pd.read_sql_table('df_recipe_topic_labeled_mvp_reduced', engine_recipes)
 
 df.head(15)
 
