@@ -36,9 +36,10 @@ st.write(
 #data = data.rename(columns={'LATITUDE': 'lat', 'LONGITUDE': 'lon'})
 #df = pd.read_csv('C:/Git Storage/Engineering/df_recipe_topic_labeled_mvp.csv')
 engine_recipes = create_engine('sqlite:///mvp_recipe_reduced.db').connect()
+st.write('test')
 df = pd.read_sql_table('df_recipe_topic_labeled_mvp_reduced', engine_recipes)
 
-df.head(15)
+#df.head(15)
 
 #st.dataframe(data)
 #st.table(data)
