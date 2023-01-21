@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib as plt
-import sklearn
+#import sklearn
 import streamlit as st
 from sqlalchemy import create_engine
 
