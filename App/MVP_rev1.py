@@ -39,7 +39,7 @@ st.write(
 engine_recipes = create_engine('sqlite:///mvp_recipe_reduced.db').connect()
 st.write('test')
 
-insp = inspect(engine) 
+insp = inspect(engine_recipes) 
 print(insp.get_table_names())
 st.write('test2')
 
