@@ -41,8 +41,8 @@ st.write(
 #st.write('test')
 con = sqlite3.connect('mvp_recipe_reduced.db')
 cur = con.cursor()
-df = pd.read_sql_query("SELECT * from df_recipe_topic_labeled_mvp_reduced", con)
-st.write('test')
+df = pd.read_sql_query("SELECT * FROM df_recipe_topic_labeled_mvp_reduced", con)
+
 
 #insp = inspect(engine_recipes) 
 #st.write(insp.get_table_names())
