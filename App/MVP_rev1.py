@@ -5,6 +5,7 @@ import matplotlib as plt
 import streamlit as st
 from sqlalchemy import create_engine
 from sqlalchemy import inspect
+import sqlite
 
 #import gcsfs
 #from google.oauth2 import service_account
@@ -36,12 +37,16 @@ st.write(
 #df = pd.read_csv('gs://bucket_lhs/eng_db/df_recipe_topic_labeled.csv')
 #data = data.rename(columns={'LATITUDE': 'lat', 'LONGITUDE': 'lon'})
 #df = pd.read_csv('C:/Git Storage/Engineering/df_recipe_topic_labeled_mvp.csv')
-engine_recipes = create_engine('sqlite:///mvp_recipe_reduced.db').connect()
+
+#engine_recipes = create_engine('sqlite:///mvp_recipe_reduced.db').connect()
+#st.write('test')
+
+engine_recipes = sqlite3.connect('mvp_recipe_reduced.db')
 st.write('test')
 
-insp = inspect(engine_recipes) 
-st.write(insp.get_table_names())
-st.write('test2')
+#insp = inspect(engine_recipes) 
+#st.write(insp.get_table_names())
+#st.write('test2')
 
 df = pd.read_sql_table('df_recipe_topic_labeled_mvp_reduced', engine_recipes)
 
