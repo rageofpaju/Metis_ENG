@@ -5,3 +5,4 @@ gcsfs==2022.11.0
 google-cloud-storage==2.7.0
 gcloud_config_helper==0.2.2
 SQLAlchemy==1.4.39
+sqlite==3.39.3
