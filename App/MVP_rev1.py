@@ -40,7 +40,7 @@ engine_recipes = create_engine('sqlite:///mvp_recipe_reduced.db').connect()
 st.write('test')
 
 insp = inspect(engine_recipes) 
-print(insp.get_table_names())
+st.write(insp.get_table_names())
 st.write('test2')
 
 df = pd.read_sql_table('df_recipe_topic_labeled_mvp_reduced', engine_recipes)
