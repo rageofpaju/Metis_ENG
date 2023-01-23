@@ -35,13 +35,14 @@ st.write(
 
 #df = pd.read_csv('df_recipe_topic_labeled.csv')
 #df = pd.read_csv('gs://bucket_lhs/eng_db/df_recipe_topic_labeled.csv')
-#df = pd.read_csv('C:/Git Storage/Engineering/df_recipe_topic_labeled_mvp.csv')
+df = pd.read_csv('df_recipe_topic_labeled_mvp.csv')
 
 #engine_recipes = create_engine('sqlite:///mvp_recipe_reduced.db').connect()
 #st.write('test')
-con = sqlite3.connect('mvp_recipe_reduced.db')
-cur = con.cursor()
-df = pd.read_sql_query('SELECT * FROM df_recipe_topic_labeled_mvp_reduced', con)
+
+#con = sqlite3.connect('mvp_recipe_reduced.db')
+#cur = con.cursor()
+#df = pd.read_sql_query('SELECT * FROM df_recipe_topic_labeled_mvp_reduced', con)
 
 
 #insp = inspect(engine_recipes) 
