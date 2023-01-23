@@ -35,7 +35,7 @@ st.write(
 
 #df = pd.read_csv('df_recipe_topic_labeled.csv')
 #df = pd.read_csv('gs://bucket_lhs/eng_db/df_recipe_topic_labeled.csv')
-df = pd.read_csv('df_recipe_topic_labeled_mvp.csv')
+df = pd.read_csv('df_recipe_topic_labeled_mvp_reduced.csv')
 
 #engine_recipes = create_engine('sqlite:///mvp_recipe_reduced.db').connect()
 #st.write('test')
