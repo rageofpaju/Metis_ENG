@@ -80,8 +80,8 @@ pd.set_option('display.max_columns', None)
 
 st.write(
 '''
-# MVP Rev.01
-## Recipes Recommender, based on food types and ingredients
+# The Fridge Scrounger
+- Recipes Recommender, based on food types and ingredients
 
 ''')
 
