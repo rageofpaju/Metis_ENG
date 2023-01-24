@@ -211,7 +211,7 @@ else:
     st.text("")
     st.write(
     '''
-    # :cook: Here's a for recipe for you :cook:
+    # :cook: Here's a recipe for you :cook:
     ''')
     #food_suggestion = filter_calories[['Name', 'RecipeInstructions','RecipeIngredientParts','Calories']].sample(1)
     food_suggestion = filter_calories.sample(1)
