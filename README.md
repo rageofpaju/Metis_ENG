@@ -1,4 +1,5 @@
 # Metis_ENG_2023 - The Fridge Scrounger: A simple recipe recommender web app. 
+
 ---
 This repo contains works from Metis Data Engineering Module
 You can access the Streamlit app via [this link](https://rageofpaju-metis-eng-appfridge-scrounger-project-rev1-1trjwl.streamlit.app/)
@@ -12,7 +13,6 @@ Repo Table of Contents:
 
 
 
-https://www.kaggle.com/datasets/irkaal/foodcom-recipes-and-reviews?select=recipes.csv
 
 ## ABSTRACT
 You know there are times when you need to cook some food to feed yourself, you open up your refridgerator and see a bunch of ingredients lying around, but you just can't decide what to make.
