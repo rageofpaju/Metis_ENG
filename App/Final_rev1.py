@@ -4,8 +4,6 @@ import matplotlib as plt
 #import sklearn
 import streamlit as st
 import sqlite3
-#from sqlalchemy import create_engine
-#from sqlalchemy import inspect
 
 import boto3  # REQUIRED! - Details here: https://pypi.org/project/boto3/
 from botocore.exceptions import ClientError
@@ -74,10 +72,10 @@ with col2:
     ''')
 
 # For testing
-df = pd.read_csv('C:/Git Storage/Engineering/df_recipe_topic_labeled_eng_reduced.csv')
+#df = pd.read_csv('C:/Git Storage/Engineering/df_recipe_topic_labeled_eng_reduced.csv')
 
 # For real thing (github)
-#df = pd.read_csv('/app/metis_eng/App/df_recipe_topic_labeled_eng_reduced.csv')
+df = pd.read_csv('/app/metis_eng/App/df_recipe_topic_labeled_eng_reduced.csv')
 
 # For real thing (backblaze)
 #df = pd.read_csv('https://s3.us-west-004.backblazeb2.com/metis-eng-edlee/df_recipe_topic_labeled_mvp_reduced.csv')
