@@ -57,7 +57,7 @@ obj_url = list_objects_browsable_url(st.secrets['BUCKET_NAME'], st.secrets['ENDP
 
 st.write(obj_keys)
 st.write(obj_url)
-st.write(obj_url[1])
+data_url = obj_url[0]
 
 #import gcsfs
 #from google.oauth2 import service_account
@@ -88,7 +88,8 @@ st.write(
 #df = pd.read_csv('df_recipe_topic_labeled.csv')
 #df = pd.read_csv('gs://bucket_lhs/eng_db/df_recipe_topic_labeled.csv')
 #df = pd.read_csv('/app/metis_eng/App/df_recipe_topic_labeled_mvp_reduced.csv')
-df = pd.read_csv('https://s3.us-west-004.backblazeb2.com/metis-eng-edlee/df_recipe_topic_labeled_mvp_reduced.csv')
+#df = pd.read_csv('https://s3.us-west-004.backblazeb2.com/metis-eng-edlee/df_recipe_topic_labeled_mvp_reduced.csv')
+df = pd.read_csv('data_url')
 
 #engine_recipes = create_engine('sqlite:///mvp_recipe_reduced.db').connect()
 #st.write('test')
