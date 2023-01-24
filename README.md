@@ -5,4 +5,5 @@ Works from Metis Data Engineering Module
 ---
 Repo Table of Contents:
 - App : Contains main project and MVP
-	-
+	- Codes and related files for my main project
+	- 'MVP' folder: a folder containing codes and data that I submitted for the MVP
