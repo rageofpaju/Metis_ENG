@@ -122,7 +122,7 @@ st.write(
 ''')
 choose_topic = st.selectbox(
 'Choose a category',
-('Stew', 'Dessert', 'Entree', 'Pasta&Casserole','Baked'))
+ ('Soup & Stew', 'Dessert', 'Chicken', 'Cool Beverages', 'Meat Dish', 'Breads', 'Sides', 'Pasta', 'Roasts', 'Sauces', 'Deli'))
 st.write('You have selected:', choose_topic)
 topic_filtered = df.loc[df['Topic'] == choose_topic]
 # RecipeIngredientQuantities, RecipeIngredientParts 	ReviewCount	FatContent	SaturatedFatContent	CholesterolContent	SodiumContent	CarbohydrateContent	FiberContent	SugarContent	ProteinContent	RecipeServings	RecipeYield	RecipeInstructions	Topic
