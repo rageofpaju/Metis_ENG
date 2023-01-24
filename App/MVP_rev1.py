@@ -81,7 +81,10 @@ pd.set_option('display.max_columns', None)
 st.write(
 '''
 # The Fridge Scrounger
-- Recipes Recommender, based on food types and ingredients
+- A recipes recommender based on food types and ingredients
+
+
+
 
 ''')
 
