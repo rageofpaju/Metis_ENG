@@ -43,14 +43,14 @@ st.write(
 
 #df = pd.read_csv('df_recipe_topic_labeled.csv')
 #df = pd.read_csv('gs://bucket_lhs/eng_db/df_recipe_topic_labeled.csv')
-df = pd.read_csv('/app/metis_eng/App/df_recipe_topic_labeled_mvp_reduced.csv')
+#df = pd.read_csv('/app/metis_eng/App/df_recipe_topic_labeled_mvp_reduced.csv')
 
 #engine_recipes = create_engine('sqlite:///mvp_recipe_reduced.db').connect()
 #st.write('test')
 
-#con = sqlite3.connect('https://github.com/rageofpaju/Metis_ENG/edit/main/App/MVP_rev1.py.db')
-#cur = con.cursor()
-#df = pd.read_sql_query('SELECT * FROM df_recipe_topic_labeled_mvp_reduced', con)
+con = sqlite3.connect('/app/metis_eng/App/mvp_recipe_reduced.db')
+cur = con.cursor()
+df = pd.read_sql_query('SELECT * FROM df_recipe_topic_labeled_mvp_reduced', con)
 
 
 #insp = inspect(engine_recipes) 
