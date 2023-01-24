@@ -118,19 +118,6 @@ df = pd.read_csv('/app/metis_eng/App/df_recipe_topic_labeled_eng_reduced.csv')
 
 st.write(
 '''
-## What kind of food do you want to cook?
-''')
-choose_topic = st.selectbox(
-'Choose a category',
- ('Soup & Stew', 'Dessert', 'Chicken', 'Cool Beverages', 'Meat Dish', 'Breads', 'Sides', 'Pasta', 'Roasts', 'Sauces', 'Deli'))
-st.write('You have selected:', choose_topic)
-topic_filtered = df.loc[df['Topic'] == choose_topic]
-# RecipeIngredientQuantities, RecipeIngredientParts 	ReviewCount	FatContent	SaturatedFatContent	CholesterolContent	SodiumContent	CarbohydrateContent	FiberContent	SugarContent	ProteinContent	RecipeServings	RecipeYield	RecipeInstructions	Topic
-#TopicTotalTime, Description, AggregatedRating, 
-#topic_filtered
-
-st.write(
-'''
 ## Which ingredients do you have available / want to use?
 Type in the ingredients in lowercase.  You can leave these fields empty.
 ''')
@@ -142,6 +129,20 @@ base = r'^{}'
 expr = '(?=.*{})'
 lookup_ingred = [ingred1, ingred2, ingred3]  # example
 lookup_tesrgets = base.format(''.join(expr.format(w) for w in lookup_ingred))
+
+st.write(
+'''
+## What kind of food do you want to cook?
+''')
+choose_topic = st.selectbox(
+'Choose a category',
+ ('Soup & Stew', 'Dessert', 'Chicken', 'Cool Beverages', 'Meat Dish', 'Breads', 'Sides', 'Pasta', 'Roasts', 'Sauces', 'Deli'))
+st.write('You have selected:', choose_topic)
+topic_filtered = df.loc[df['Topic'] == choose_topic]
+# RecipeIngredientQuantities, RecipeIngredientParts 	ReviewCount	FatContent	SaturatedFatContent	CholesterolContent	SodiumContent	CarbohydrateContent	FiberContent	SugarContent	ProteinContent	RecipeServings	RecipeYield	RecipeInstructions	Topic
+#TopicTotalTime, Description, AggregatedRating, 
+#topic_filtered
+
 
 filter_ingredients = topic_filtered[topic_filtered['RecipeIngredientParts'].str.contains(lookup_tesrgets, regex = True)]
 filter_ingredients.reset_index(drop=True)
