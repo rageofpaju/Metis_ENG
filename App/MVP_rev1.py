@@ -118,8 +118,8 @@ df = pd.read_csv('/app/metis_eng/App/df_recipe_topic_labeled_eng_reduced.csv')
 
 st.write(
 '''
-## Which ingredients do you have available / want to use?
-Type in the ingredients in lowercase.  You can leave these fields empty.
+## Which ingredients do you have? Choose up to three ingredients you will use.  
+### Type in the ingredients in lowercase.  You can leave these fields empty.
 ''')
 ingred1 = st.text_input("Ingredient Available 1")
 ingred2 = st.text_input("Ingredient Available 2")
@@ -200,7 +200,7 @@ else:
     ''')
     food_suggestion['RecipeInstructions'][0]
     
-st.button('Reroll')
+st.button('Give me something else!')
 
 
 
