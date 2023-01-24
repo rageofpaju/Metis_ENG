@@ -82,10 +82,7 @@ st.write(
 '''
 # The Fridge Scrounger
 - A recipes recommender based on food types and ingredients
-
-
-
-
+\n\n\n
 ''')
 
 #df = pd.read_csv('df_recipe_topic_labeled.csv')
