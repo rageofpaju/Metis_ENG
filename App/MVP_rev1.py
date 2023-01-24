@@ -57,6 +57,7 @@ obj_url = list_objects_browsable_url(st.secrets['BUCKET_NAME'], st.secrets['ENDP
 
 st.write(obj_keys)
 st.write(obj_url)
+st.write(obj_keys[1])
 
 #import gcsfs
 #from google.oauth2 import service_account
