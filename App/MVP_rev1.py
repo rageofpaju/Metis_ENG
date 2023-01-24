@@ -14,6 +14,40 @@ from dotenv import load_dotenv  # Project Must install Python Package:  python-d
 import os
 import sys
 
+def list_object_keys(bucket, b2):
+    try:
+        response = b2.Bucket(bucket).objects.all()
+
+        return_list = []               # create empty list
+        for object in response:        # iterate over response
+            return_list.append(object.key) # for each item in response append object.key to list
+        return return_list             # return list of keys from response
+
+    except ClientError as ce:
+        print('error', ce)
+
+
+# List browsable URLs of the objects in the specified bucket - Useful for *PUBLIC* buckets
+def list_objects_browsable_url(bucket, endpoint, b2):
+    try:
+        bucket_object_keys = list_object_keys(bucket, b2)
+
+        return_list = []                # create empty list
+        for key in bucket_object_keys:  # iterate bucket_objects
+            url = "%s/%s/%s" % (endpoint, bucket, key) # format and concatenate strings as valid url
+            return_list.append(url)     # for each item in bucket_objects append value of 'url' to list
+        return return_list              # return list of keys from response
+
+    except ClientError as ce:
+        print('error', ce)
+
+ b2 = boto3.resource(service_name='s3',
+                        endpoint_url=ENDPOINT_URL,                # Backblaze endpoint
+                        config = Config(
+                            signature_version='s3v4',
+                        ))
+
+st.write(list_objects_browsable_url(BUCKET_NAME, ENDPOINT_URL, b2))
 
 #import gcsfs
 #from google.oauth2 import service_account
