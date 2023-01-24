@@ -17,7 +17,7 @@ import sys
 def list_object_keys(bucket, b2):
     try:
         response = b2.Bucket(bucket).objects.all()
-
+        
         return_list = []               # create empty list
         for object in response:        # iterate over response
             return_list.append(object.key) # for each item in response append object.key to list
@@ -41,11 +41,10 @@ def list_objects_browsable_url(bucket, endpoint, b2):
     except ClientError as ce:
         print('error', ce)
 
- b2 = boto3.resource(service_name='s3',
-                        endpoint_url=ENDPOINT_URL,                # Backblaze endpoint
-                        config = Config(
-                            signature_version='s3v4',
-                        ))
+b2 = boto3.resource(service_name='s3',
+                    endpoint_url=ENDPOINT_URL,                # Backblaze endpoint
+                    config = Config(signature_version='s3v4',\
+                                   ))
 
 st.write(list_objects_browsable_url(BUCKET_NAME, ENDPOINT_URL, b2))
 
