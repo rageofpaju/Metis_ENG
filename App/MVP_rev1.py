@@ -92,13 +92,13 @@ st.write(
 #engine_recipes = create_engine('sqlite:///mvp_recipe_reduced.db').connect()
 #st.write('test')
 
-#con = sqlite3.connect(obj_url[1])
-#cur = con.cursor()
-#df = pd.read_sql_query('SELECT * FROM df_recipe_topic_labeled_mvp_reduced', con)
-
-con = sqlite3.connect('/app/metis_eng/App/mvp_recipe_reduced.db')
+con = sqlite3.connect('https://s3.us-west-004.backblazeb2.com/metis-eng-edlee/mvp_recipe_reduced.db')
 cur = con.cursor()
 df = pd.read_sql_query('SELECT * FROM df_recipe_topic_labeled_mvp_reduced', con)
+
+#con = sqlite3.connect('/app/metis_eng/App/mvp_recipe_reduced.db')
+#cur = con.cursor()
+#df = pd.read_sql_query('SELECT * FROM df_recipe_topic_labeled_mvp_reduced', con)
 
 
 #insp = inspect(engine_recipes) 
