@@ -21,12 +21,12 @@ I aimed to build a data pipeline, a simple web app, based on a dataset with topi
 In a way, this is an extension of the NLP project, where I have built a topic model for a food.com recipe dataset to label each recipes with according topic. 
 
 ## DATA
--Original Source of data 
+- Original Source of data 
 	- A CSV file of Food.com recipes dataset obtained from Kaggle  (shorturl.at/jzCRY)
 	- Some of its columns include name, prep/cook time, ingredients, ratings, calories, nutritions, instructions
 	- 550,000 entries
 
--Dataset Preprocessing
+- Dataset Preprocessing
 	- The source dataset was cleaned (removal of uneccessary puncuations, removal of null values for relevant columns, dropping unecessary columns) and its number of entries reduced down to about 330,000 total.
 	- Then the dataset was run through a NMF topic model that I have built previously on NLP project in order to assign ropics.
 	- The preprocessed dataset was stored as CSV file so it can be directly read from the cloud storage
