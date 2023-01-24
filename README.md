@@ -1,6 +1,6 @@
-# Metis_ENG
+# Metis_ENG_2023 - The Fridge Scrounger: A simple recipe recommender web app. 
 ---
-Works from Metis Data Engineering Module
+This repo contains works from Metis Data Engineering Module
 You can access the Streamlit app via [this link](https://rageofpaju-metis-eng-appfridge-scrounger-project-rev1-1trjwl.streamlit.app/)
 ---
 Repo Table of Contents:
@@ -17,6 +17,23 @@ https://www.kaggle.com/datasets/irkaal/foodcom-recipes-and-reviews?select=recipe
 ## ABSTRACT
 You know there are times when you need to cook some food to feed yourself, you open up your refridgerator and see a bunch of ingredients lying around, but you just can't decide what to make.
 
-Once I have assigned topics to the dataset using the previously-built NLP model from my previous project, I aimed to build a data pipeline, a simple web app, to suggest a possible dish that you can cook out of what you have.  
+I aimed to build a data pipeline, a simple web app, based on a dataset with topics labeled via a previously-built NLP model from my previous project, that suggests you  a possible dish that you can cook out of the ingredients you have.  
 
-In a way, this is an extension of the NLP project, where I have built a topic model for a food.com recipe dataset (shorturl.at/jzCRY) to label each recipes with according topic. 
+In a way, this is an extension of the NLP project, where I have built a topic model for a food.com recipe dataset to label each recipes with according topic. 
+
+## DATA
+Original Source of data 
+- A CSV file of Food.com recipes dataset obtained from Kaggle  (shorturl.at/jzCRY)
+- Some of its columns include name, prep/cook time, ingredients, ratings, calories, nutritions, instructions
+- 550,000 entries
+
+Dataset Preprocessing
+- The source dataset was cleaned (removal of uneccessary puncuations, removal of null values for relevant columns, dropping unecessary columns) and its number of entries reduced down to about 330,000 total.
+- Then the dataset was run through a NMF topic model that I have built previously on NLP project in order to assign ropics.
+- The preprocessed dataset was stored as CSV file so it can be directly read from the cloud storage
+
+## DESIGN
+1. **Data Ingestion** : csv downloaded from kaggle, preprocessing with a NMF-based topic model
+2. **Storage** : cloud stroage for the main dataset (~750MB); Github repo for the app (and also a showcase dataset) 
+3. **Processing / Writing An App** : Data manipulation in-app. Taking user inputs and creating filters based on them. Suggesting a random recipe under a given criteria. 
+5. **Deploying The Recommender App** : [The app](https://rageofpaju-metis-eng-appfridge-scrounger-project-rev1-1trjwl.streamlit.app/) is deplyed on Streamlit, and is connected with Github repo 
