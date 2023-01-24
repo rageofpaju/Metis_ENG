@@ -51,7 +51,8 @@ b2 = boto3.resource(service_name='s3',
 #b2 = boto3.resource(service_name='s3',
 #                    endpoint_url=st.secrets['ENDPOINT_URL'],                # Backblaze endpoint
 #                    config = Config(signature_version='s3v4',\
-                                   ))
+#                                   ))
+
 st.write(list_object_keys(st.secrets['BUCKET_NAME'], b2)
 st.write(list_objects_browsable_url(st.secrets['BUCKET_NAME'], st.secrets['ENDPOINT_URL'], b2))
 
