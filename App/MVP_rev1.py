@@ -42,11 +42,11 @@ def list_objects_browsable_url(bucket, endpoint, b2):
         print('error', ce)
 
 b2 = boto3.resource(service_name='s3',
-                    endpoint_url=ENDPOINT_URL,                # Backblaze endpoint
+                    endpoint_url=st.secrets['ENDPOINT_URL'],                # Backblaze endpoint
                     config = Config(signature_version='s3v4',\
                                    ))
 
-st.write(list_objects_browsable_url(BUCKET_NAME, ENDPOINT_URL, b2))
+st.write(list_objects_browsable_url(st.secrets['BUCKET_NAME'], st.secrets['ENDPOINT_URL'], b2))
 
 #import gcsfs
 #from google.oauth2 import service_account
