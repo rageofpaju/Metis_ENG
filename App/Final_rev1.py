@@ -5,6 +5,7 @@ import matplotlib as plt
 import streamlit as st
 import sqlite3
 
+#Modules required to import data from cloud
 import boto3  # REQUIRED! - Details here: https://pypi.org/project/boto3/
 from botocore.exceptions import ClientError
 from botocore.config import Config
@@ -12,6 +13,7 @@ from dotenv import load_dotenv  # Project Must install Python Package:  python-d
 import os
 import sys
 
+# Uncomment below for cloud storage
 #'''
 #def list_object_keys(bucket, b2):
 #    try:
