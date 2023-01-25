@@ -1,4 +1,5 @@
-# Metis_ENG_2023 - The Fridge Scrounger: A simple recipe recommender web app. 
+# Metis_ENG_2023
+# The Fridge Scrounger: A simple recipe recommender web app. 
 
 ---
 ### This is a writeup/README for my project from Metis Data Engineering Module. You can access its Streamlit app Rev.1 via [this link](https://rageofpaju-metis-eng-appfridge-scrounger-project-rev1-1trjwl.streamlit.app/).
