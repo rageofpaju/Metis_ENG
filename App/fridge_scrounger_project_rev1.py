@@ -90,18 +90,19 @@ st.text("")
 st.write(
 '''
 ## Step 1. Which ingredients do you have? \n ##### - Choose up to three major ingredients you WILL use.  
-- NOTE: The app will search for the recipes that use ALL the ingredients you entered.
-- Type in the ingredients in lowercase. You can leave these fields empty.
+- NOTE: The app will search for the recipes that use **ALL** the ingredients you entered.
+- You can leave these fields empty if you want.
 ''')
 
 ingred1 = st.text_input("Ingredient Available 1")
 ingred2 = st.text_input("Ingredient Available 2")
 ingred3 = st.text_input("Ingredient Available 3")
+ingred4 = st.text_input("Ingredient Available 4")
 
 #searching for str: https://stackoverflow.com/questions/37011734/pandas-dataframe-str-contains-and-operation
 base = r'^{}'
 expr = '(?=.* {})' # Adding a space in front of {} is a primitive way to search for exact words
-lookup_ingred = [ingred1.lower(), ingred2.lower(), ingred3.lower()]  # example
+lookup_ingred = [ingred1.lower(), ingred2.lower(), ingred3.lower(), ingred4.lower()]  # example
 lookup_tesrgets = base.format(''.join(expr.format(w) for w in lookup_ingred))
 #st.write(lookup_tesrgets)
 filter_ingredients = df[df['RecipeIngredientParts'].str.contains(lookup_tesrgets, regex = True)]
