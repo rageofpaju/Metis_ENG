@@ -159,6 +159,7 @@ else:
 
 
 # Set Cook Time
+time_flag = 0
 if topic_flag==1:
     st.write(
     '''
@@ -177,10 +178,25 @@ if topic_flag==1:
         filter_time = filter_ingredients[filter_ingredients['TotalTimeHrs'] <= float(0.5)]
     elif time_slider=='eventually':
         filter_time = filter_ingredients
+        
+    if filter_time.empty == True:
+        st.write(
+        '''
+        # ***No matching recipes found with the cook time you entered!***.
+        ''')
+        pass
+    else:    
+        time_flag = 1
 else:
     pass
 
-if topic_flag==1:
+
+
+# Set calories
+calories_flag=0
+if time_flag==1:
+    st.text("")
+    st.text("")
     st.write(
     '''
     ## (Optional) Step 4. How much calories do you want? 
@@ -199,7 +215,7 @@ else:
 
 
 #if filter_calories.empty == True:
-if topic_flag == 0:
+if calories_flag == 0:
     pass
 elif filter_calories.empty == True:
     st.write(
@@ -259,4 +275,3 @@ else:
 
 
 #'CookTime', 'PrepTime', 'RecipeServings', 'RecipeYield', 'RecipeInstructions', 'Calories']
-#price_input = st.slider('House Price Filter', int(data['PRICE'].min()), int(data['PRICE'].max()), 500000 )
