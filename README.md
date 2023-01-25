@@ -27,7 +27,7 @@ In a way, this is an extension of the NLP project, where I have built a topic mo
 - Original Source of data 
 	- A CSV file of Food.com recipes dataset obtained from [kaggle](shorturl.at/jzCRY).
 	- Some of its columns include name, prep/cook time, ingredients, ratings, calories, nutritions, instructions
-	- 550,000 entries
+	- ~550,000 entries
 
 - Dataset Preprocessing
 	- The source dataset was cleaned (removal of uneccessary puncuations, removal of null values for relevant columns, dropping unecessary columns) and its number of entries reduced down to about 330,000 total.
