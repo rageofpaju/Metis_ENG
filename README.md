@@ -48,7 +48,7 @@ In a way, this is an extension of the NLP project, where I have built a topic mo
 ## TOOLS
 - **Standard Python libraries** such as pandas, numpy, etc for EDA and cleaning the data.
 - Some libraries related to unsupervised learning (**sklearn**) for going over the NLP models.
-- **Backblaze B2** for majority of remote data storage. **Github Repository** for codes. **Sqlite** for MVP submission. 
+- **Backblaze B2** for majority of remote data storage. **Github Repository** for codes. **SQLite** for MVP submission. 
 - Packaging & Visualization: **Streamlit**
 
 ## COMMUNICATION
