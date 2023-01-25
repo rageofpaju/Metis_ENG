@@ -19,9 +19,9 @@
 ## ABSTRACT
 You know there are times when you need to cook some food to feed yourself, you open up your refridgerator and see a bunch of ingredients lying around, but you just can't decide what to make.
 
-I aimed to build a data pipeline, a simple web app, based on a dataset with topics labeled via a previously-built NLP model from my previous project, that suggests you  a possible dish that you can cook out of the ingredients you have.  
+I have built a data pipeline, a simple web app, based on a dataset with topics labeled via a previously-built NLP model from my previous project, that suggests you  a possible dish that you can cook out of the ingredients you have.  
 
-In a way, this is an extension of a [NLP project](https://github.com/rageofpaju/Metis_NLP) I have previously worked on, where I have built a topic model for a recipe dataset to label each recipes with according topic. 
+In a way, this is an extension of a [NLP project](https://github.com/rageofpaju/Metis_NLP) I have previously worked on, where I have created a topic model for a recipe dataset to label each recipe with an appropriate topic. 
 
 ## DATA
 - Original Source of data 
