@@ -5,13 +5,13 @@
 ### This is a writeup/README for my project from Metis Data Engineering Module. You can access its Streamlit app Rev.1 via [this link](https://rageofpaju-metis-eng-appfridge-scrounger-project-rev1-1trjwl.streamlit.app/).
 ---
 Repo Table of Contents:
-- [App](https://github.com/rageofpaju/Metis_ENG/tree/main/App): Contains the main project materials and MVP
+- [App](https://github.com/rageofpaju/Metis_ENG/tree/main/App): A folder containing the main project materials and MVP
 	- Codes and related files for my main project
 		- [fridge_scrounger_project_rev1.py](https://github.com/rageofpaju/Metis_ENG/blob/main/App/fridge_scrounger_project_rev1.py): My main code; a .py file for Streamlit deployment
 		- df_recipe_topic_labeled_eng_reduced.csv: Recipes dataset with topics assigned; this file is a reduced version of the original file to be used as a showcase example.
 		- Other files such as example screenshot of the app. 
 	- '[MVP' folder](https://github.com/rageofpaju/Metis_ENG/tree/main/App/MVP): a folder containing codes and data that I submitted for the MVP
-- [Presentation](https://github.com/rageofpaju/Metis_ENG/blob/main/Presentation/): Contains presentation slide 
+- [Presentation](https://github.com/rageofpaju/Metis_ENG/blob/main/Presentation/): A folder containing presentation slides.
 ---
 
 
