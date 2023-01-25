@@ -89,7 +89,7 @@ st.text("")
 st.text("")
 st.write(
 '''
-## Step 1. Which ingredients do you have? \n ##### - Choose up to three major ingredients you WILL use.  
+## Step 1. Which ingredients do you have? \n ##### - Type in up to four major ingredients you **WILL** use.  
 - NOTE: The app will search for the recipes that use **ALL** the ingredients you entered.
 - You can leave these fields empty if you want.
 ''')
