@@ -7,7 +7,8 @@ Repo Table of Contents:
 - [App](https://github.com/rageofpaju/Metis_ENG/tree/main/App): Contains the main project materials and MVP
 	- Codes and related files for my main project
 		- [fridge_scrounger_project_rev1.py](https://github.com/rageofpaju/Metis_ENG/blob/main/App/fridge_scrounger_project_rev1.py): My main code; a .py file for Streamlit deployment
-		- df_recipe_topic_labeled_eng_reduced.csv: Recipes dataset with topics assigned; this file is a reduced version of the original file to be used as a showcase example. 
+		- df_recipe_topic_labeled_eng_reduced.csv: Recipes dataset with topics assigned; this file is a reduced version of the original file to be used as a showcase example.
+		- Other files such as example screenshot of the app. 
 	- '[MVP' folder](https://github.com/rageofpaju/Metis_ENG/tree/main/App/MVP): a folder containing codes and data that I submitted for the MVP
 - [Presentation](https://github.com/rageofpaju/Metis_ENG/blob/main/Presentation/): Contains presentation slide 
 ---
@@ -53,4 +54,4 @@ In a way, this is an extension of the NLP project, where I have built a topic mo
 - Objective and worlflows are summarized in a [presentation slide](https://github.com/rageofpaju/Metis_ENG/blob/main/Presentation/Eng__Final_Presentaion_Ed_Lee.pdf).
 - The web app, again, can be accessed via [here](https://rageofpaju-metis-eng-appfridge-scrounger-project-rev1-1trjwl.streamlit.app/).
 
-<img src="https://github.com/rageofpaju/Metis_ENG/blob/main/app_ex1.png" width="250" height="350"><img src="https://github.com/rageofpaju/Metis_ENG/blob/main/app_ex2.png" width="250" height="350"><img src="https://github.com/rageofpaju/Metis_ENG/blob/main/app_ex3.png" width="250" height="350">
+<img src="https://github.com/rageofpaju/Metis_ENG/blob/main/App/app_ex1.png" width="250" height="350"><img src="https://github.com/rageofpaju/Metis_ENG/blob/main/App/app_ex2.png" width="250" height="350"><img src="https://github.com/rageofpaju/Metis_ENG/blob/main/App/app_ex3.png" width="250" height="350">
