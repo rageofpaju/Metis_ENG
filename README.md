@@ -32,9 +32,24 @@ In a way, this is an extension of the NLP project, where I have built a topic mo
 	- The preprocessed dataset was stored as CSV file so it can be directly read from the cloud storage
 
 ## DESIGN
-1. **Data Ingestion** : csv downloaded from kaggle, preprocessing with a NMF-based topic model
-2. **Storage** : cloud stroage for the main dataset (~750MB); Github repo for the app (and also a showcase dataset) 
-3. **Processing / Writing An App** : Data manipulation in-app. Taking user inputs and creating filters based on them. Suggesting a random recipe under a given criteria. 
-5. **Deploying The Recommender App** : [The app](https://rageofpaju-metis-eng-appfridge-scrounger-project-rev1-1trjwl.streamlit.app/) is deplyed on Streamlit, and is connected with Github repo 
+1. **Data Ingestion**: csv downloaded from kaggle, preprocessing with a NMF-based topic model
+2. **Storage**: cloud stroage for the main dataset (~750MB); Github repo for the app (and also a showcase dataset) 
+3. **Processing / Writing An App**: Data manipulation in-app. Taking user inputs and creating filters based on them. Suggesting a random recipe under a given criteria. 
+5. **Deploying The Recommender App**: [The app](https://rageofpaju-metis-eng-appfridge-scrounger-project-rev1-1trjwl.streamlit.app/) is deplyed on Streamlit, and is connected with Github repo 
+
+## ALGORITHM
+- Data Recall: based on a set of documentations provided by Backblaze.
+- Preprocessing: NMF-based topic modelling. Assigns a topic that scores the highest fit for each recipe.
+- Recommender App: Mainly Pandas data manipulation with user inputs as conditions for Rev1.
+
+## TOOLS
+- **Standard Python libraries** such as pandas, numpy, etc for EDA and cleaning the data.
+- Some libraries related to unsupervised learning (**sklearn**) for going over the NLP models.
+- **Backblaze B2** for majority of remote data storage. **Github Repository** for codes. **Sqlite** for MVP submission. 
+- Packaging & Visualization: **Streamlit**
+
+## COMMUNICATION
+- Objective and worlflows are summarized in a [presentation slide](https://github.com/rageofpaju/Metis_ENG/blob/main/Presentation/Eng__Final_Presentaion_Ed_Lee.pdf).
+- The web app, again, can be accessed via [here](https://rageofpaju-metis-eng-appfridge-scrounger-project-rev1-1trjwl.streamlit.app/). 
 
 
