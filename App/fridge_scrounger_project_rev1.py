@@ -1,9 +1,9 @@
 import numpy as np
 import pandas as pd
-import matplotlib as plt
+#import matplotlib as plt
 #import sklearn
 import streamlit as st
-import sqlite3
+#import sqlite3
 
 #Modules required to import data from cloud
 import boto3  # REQUIRED! - Details here: https://pypi.org/project/boto3/
