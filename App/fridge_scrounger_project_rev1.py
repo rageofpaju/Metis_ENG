@@ -94,10 +94,10 @@ st.write(
 - You can leave these fields empty if you want.
 ''')
 
-ingred1 = st.text_input("Ingredient Available 1", placeholder="e.g., chicken, onion, apple etc...")
-ingred2 = st.text_input("Ingredient Available 2", placeholder="e.g., chicken, onion, apple etc...")
-ingred3 = st.text_input("Ingredient Available 3", placeholder="e.g., chicken, onion, apple etc...")
-ingred4 = st.text_input("Ingredient Available 4", placeholder="e.g., chicken, onion, apple etc...")
+ingred1 = st.text_input("Ingredient Available 1", placeholder="e.g., chicken, onion, apple, etc...")
+ingred2 = st.text_input("Ingredient Available 2", placeholder="e.g., chicken, onion, apple, etc...")
+ingred3 = st.text_input("Ingredient Available 3", placeholder="e.g., chicken, onion, apple, etc...")
+ingred4 = st.text_input("Ingredient Available 4", placeholder="e.g., chicken, onion, apple, etc...")
 
 #searching for str: https://stackoverflow.com/questions/37011734/pandas-dataframe-str-contains-and-operation
 base = r'^{}'
