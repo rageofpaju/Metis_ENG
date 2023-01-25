@@ -79,8 +79,8 @@ with col2:
 #df = pd.read_csv('/app/metis_eng/App/df_recipe_topic_labeled_eng_reduced.csv')
 
 # For real thing (backblaze)
-#df = pd.read_csv('https://s3.us-west-004.backblazeb2.com/metis-eng-edlee/df_recipe_topic_labeled_mvp_reduced.csv')
-df = pd.read_csv(data_url)
+df = pd.read_csv('https://s3.us-west-004.backblazeb2.com/metis-eng-edlee/df_recipe_topic_labeled_mvp_reduced.csv')
+#df = pd.read_csv(data_url)
 
 
 
