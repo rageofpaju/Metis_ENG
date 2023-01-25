@@ -52,6 +52,6 @@ In a way, this is an extension of the NLP project, where I have built a topic mo
 ## COMMUNICATION
 - Objective and worlflows are summarized in a [presentation slide](https://github.com/rageofpaju/Metis_ENG/blob/main/Presentation/Eng__Final_Presentaion_Ed_Lee.pdf).
 - The web app, again, can be accessed via [here](https://rageofpaju-metis-eng-appfridge-scrounger-project-rev1-1trjwl.streamlit.app/). 
-![img1](https://github.com/rageofpaju/Metis_ENG/blob/main/app_ex1.png=250x250)![img2](https://github.com/rageofpaju/Metis_ENG/blob/main/app_ex2.png=250x250)
-![img3](https://github.com/rageofpaju/Metis_ENG/blob/main/app_ex3.png=250x250)
+![img1](https://github.com/rageofpaju/Metis_ENG/blob/main/app_ex1.png =250x250)![img2](https://github.com/rageofpaju/Metis_ENG/blob/main/app_ex2.png =250x250)
+![img3](https://github.com/rageofpaju/Metis_ENG/blob/main/app_ex3.png =250x250)
 
