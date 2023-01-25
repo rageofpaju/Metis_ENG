@@ -25,7 +25,7 @@ In a way, this is an extension of the NLP project, where I have built a topic mo
 
 ## DATA
 - Original Source of data 
-	- A CSV file of Food.com recipes dataset obtained from Kaggle  (shorturl.at/jzCRY)
+	- A CSV file of Food.com recipes dataset obtained from [kaggle](shorturl.at/jzCRY).
 	- Some of its columns include name, prep/cook time, ingredients, ratings, calories, nutritions, instructions
 	- 550,000 entries
 
