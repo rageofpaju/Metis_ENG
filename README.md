@@ -31,7 +31,7 @@ In a way, this is an extension of the NLP project, where I have built a topic mo
 
 - Dataset Preprocessing
 	- The source dataset was cleaned (removal of uneccessary puncuations, removal of null values for relevant columns, dropping unecessary columns) and its number of entries reduced down to about 330,000 total.
-	- Then the dataset was run through a NMF topic model that I have built previously on [NLP project](https://github.com/rageofpaju/Metis_NLP) in order to assign ropics.
+	- Then the dataset was run through a NMF topic model based on my [NLP project](https://github.com/rageofpaju/Metis_NLP) in order to assign ropics.
 	- The preprocessed dataset was stored as CSV file so it can be directly read from the cloud storage
 
 ## DESIGN
