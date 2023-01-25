@@ -1,7 +1,7 @@
 # Metis_ENG_2023 - The Fridge Scrounger: A simple recipe recommender web app. 
 
 ---
-### This repo contains works from Metis Data Engineering Module. You can access the Streamlit app via [this link](https://rageofpaju-metis-eng-appfridge-scrounger-project-rev1-1trjwl.streamlit.app/).
+### This repo contains works from Metis Data Engineering Module. You can access the Rev.1 of Streamlit app via [this link](https://rageofpaju-metis-eng-appfridge-scrounger-project-rev1-1trjwl.streamlit.app/).
 ---
 Repo Table of Contents:
 - App : Contains main project and MVP
@@ -51,6 +51,4 @@ In a way, this is an extension of the NLP project, where I have built a topic mo
 ## COMMUNICATION
 - Objective and worlflows are summarized in a [presentation slide](https://github.com/rageofpaju/Metis_ENG/blob/main/Presentation/Eng__Final_Presentaion_Ed_Lee.pdf).
 - The web app, again, can be accessed via [here](https://rageofpaju-metis-eng-appfridge-scrounger-project-rev1-1trjwl.streamlit.app/). 
-- Please check out the screenshot below for a quick example:
-- 
 
