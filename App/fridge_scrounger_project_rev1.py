@@ -28,7 +28,7 @@ def list_object_keys(bucket, b2):
         print('error', ce)
 
 
-##List browsable URLs of the objects in the specified bucket - Useful for *PUBLIC* buckets
+# List browsable URLs of the objects in the specified bucket - Useful for *PUBLIC* buckets
 def list_objects_browsable_url(bucket, endpoint, b2):
     try:
         bucket_object_keys = list_object_keys(bucket, b2)
@@ -40,9 +40,9 @@ def list_objects_browsable_url(bucket, endpoint, b2):
         return return_list              # return list of keys from response
 
     except ClientError as ce:
-       print('error', ce)
+        print('error', ce)
 
-     
+       
 b2 = boto3.resource(service_name='s3', 
                     endpoint_url=st.secrets['ENDPOINT_URL'],                # Backblaze endpoint
                     aws_access_key_id=st.secrets['credentials']['aws_access_key_id'],              # Backblaze keyID
@@ -58,7 +58,7 @@ obj_url = list_objects_browsable_url(st.secrets['BUCKET_NAME'], st.secrets['ENDP
 
 st.write(obj_keys)
 st.write(obj_url)
-data_url = obj_url[0]
+data_url = obj_url[1]
 
 
 pd.set_option('display.max_columns', None)
