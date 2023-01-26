@@ -39,7 +39,7 @@ def list_objects_browsable_url(bucket, endpoint, b2):
             return_list.append(url)     # for each item in bucket_objects append value of 'url' to list
         return return_list              # return list of keys from response
 
-   except ClientError as ce:
+    except ClientError as ce:
        print('error', ce)
 
      
