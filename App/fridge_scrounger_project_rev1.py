@@ -13,7 +13,7 @@ from dotenv import load_dotenv  # Project Must install Python Package:  python-d
 import os
 import sys
 
-#Uncomment below for using a cloud storage
+##Uncomment below for using a cloud storage
 
 def list_object_keys(bucket, b2):
     try:
@@ -28,7 +28,7 @@ def list_object_keys(bucket, b2):
         print('error', ce)
 
 
- List browsable URLs of the objects in the specified bucket - Useful for *PUBLIC* buckets
+##List browsable URLs of the objects in the specified bucket - Useful for *PUBLIC* buckets
 def list_objects_browsable_url(bucket, endpoint, b2):
     try:
         bucket_object_keys = list_object_keys(bucket, b2)
