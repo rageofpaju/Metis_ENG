@@ -52,9 +52,9 @@ b2 = boto3.resource(service_name='s3',
 obj_keys = list_object_keys(st.secrets['BUCKET_NAME'], b2)
 obj_url = list_objects_browsable_url(st.secrets['BUCKET_NAME'], st.secrets['ENDPOINT_URL'], b2)
 
-st.write(obj_keys)
-st.write(obj_url)
-data_url = obj_url[0]
+#st.write(obj_keys)
+#st.write(obj_url)
+#data_url = obj_url[0]
 
 
 pd.set_option('display.max_columns', None)
@@ -77,6 +77,7 @@ with col2:
 
 # For real thing (backblaze)
 df = pd.read_csv('https://s3.us-west-004.backblazeb2.com/metis-eng-edlee/df_recipe_topic_labeled_eng_reduced.csv')
+#      Full data
 #df = pd.read_csv(data_url)
 
 
